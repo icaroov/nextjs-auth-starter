@@ -1,7 +1,8 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { Provider } from 'next-auth/client'
 
-import GlobalStyles from '~app/styles/global'
+import GlobalStyles from 'styles/global'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -16,8 +17,10 @@ function App({ Component, pageProps }: AppProps) {
           content="Passwordless Authentication with Next.js, Prisma, and next-auth."
         />
       </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <Provider session={pageProps.session}>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </Provider>
     </>
   )
 }
