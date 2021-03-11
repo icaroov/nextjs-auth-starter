@@ -7,13 +7,13 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>NextJS Boilerplate</title>
+        <title>NextJS Auth</title>
         <link rel="shortcut icon" href="/assets/img/icon-2.png" />
         <link rel="apple-touch-icon" href="/assets/img/icon-2.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
-          content="A TypeScript + Next.js boilerplate that includes all you need to build fantastic projects."
+          content="Passwordless Authentication with Next.js, Prisma, and next-auth."
         />
       </Head>
       <GlobalStyles />
