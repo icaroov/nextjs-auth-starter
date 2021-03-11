@@ -1,7 +1,5 @@
 import { signIn, signOut, useSession } from 'next-auth/client'
 
-// import Main from 'components/Main'
-
 const Home = () => {
   const [session, loading] = useSession()
 
