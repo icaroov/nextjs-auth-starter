@@ -17,19 +17,16 @@ export const Container = styled.main`
 
 export const Logo = styled.img`
   margin-bottom: 2rem;
-  width: 25rem;
+  width: 10rem;
 `
 
-export const Title = styled.h1`
+export const Text = styled.h1`
   font-size: 2.5rem;
 `
 
-export const Description = styled.h2`
+export const Button = styled.button`
   font-size: 2rem;
-  font-weight: 400;
-`
-
-export const Illustration = styled.img`
-  margin-top: 3rem;
-  width: min(30rem, 100%);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
 `
